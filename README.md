@@ -232,11 +232,3 @@ scripts/prepare_lm1b_local_models.py
 scripts/make_lm1b_selected_replay_no_pandas.py
 scripts/aggregate_lm1b_replay_no_pandas.py
 ```
-
-## Notes
-
-- The flow-map backbones should be reproduced locally following the original Semicat training procedure.
-- After training, the evaluation scripts expect the checkpoints at the fixed paths listed above.
-- The LM1B guidance reward models and external verifier models are intentionally separated.
-- The LM1B selection and aggregation pipeline is written without pandas/numpy.
-- Flow-map checkpoints, model caches, and generated result files are not distributed in this repository.
